@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page -->
+<head>
+	<meta charset="utf-8" />
+	<!--
+		
+	Project: V3
+	Author: Derek McBryde
+	Date:   25APR2019
+   
+	Filename: index.html
+	-->
+	<title>Northwest Brizzle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="Twitch, Streamer, Northwest, Pacific, Beard"/>
+	<meta name="description" content="Northwest Brizzle home page"/>
+	<meta name="author" content="Derek McBryde" />
+	
+	<!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
+	<!--M2LO4A Demonstrate embedded styles (HTML, see "Embedded Style Sheets" (2-3b))-->
+	<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+	<a id="top"></a>
+	<header>
+	<img src="tmst2.png" alt="TMST" />
+		<nav class="bar">
+		<!-- M1LO13A Demonstrate a hyperlink to another page on your site (site navigation) (HTML) 
+			 M1LO12 Create navigation using unordered lists (HTML)-->
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+			<li><a href="about.html">Updates</a></li>
+         </ul>
+      </nav>
+	</header>
+	<article>
+		<h1>Welcome</h1>
+		<!-- M1LO13C Demonstrate a hyperlink to an external page (HTML) -->
+		<p>
+			Welcome to Northwest Brizzle's web page. My name is Derek, I go by Brizzle. 
+			I am the best Twitch streamer that no one has ever heard of. My channel Is all about Beards, Brews, and Fun.
+			Make sure to check out the About Me page to learn more about me. That sounded right.
+			For live streams and highlights, that page will be up soon, check me out at <a href= "https://www.twitch.tv/northwestbrizzle"> Twitch.tv/NorthwestBrizzle</a>
+		</p>
+		<!--M4LO1 Demonstrate the use of figure boxes (HTML)-->
+		<figure>
+			<img id="logo" src="NorthwestBrizzleLogo.png" alt="Northwest Brizzle Logo" usemap="#logo"/>
+		</figure>
+		<!-- M4LO7 Demonstrate the use of image maps, including determining x and y values. To determined the x and y values is by inspecting the page and looking at the
+			 layout of the figure. It says it is 722.8 x 722.8. I devided both numbers by 2 to put it in the center. -->
+		<map name="logo">
+			<area shape="circle" coords="361,361,200" href="https://www.twitch.tv/northwestbrizzle" alt="Northwest Brizzle's Twitch"/>
+		</map>
+	</article>
+
+	<!-- M1LO13B Demonstrate a hyperlink to a targeted location using ids (HTML) -->
+	<a href="#top">Top of Page</a>
+	<p>
+		Sources: 
+		Background:<a href="https://www.pexels.com/photo/4k-wallpaper-architecture-background-black-1308624/" > www.pexels.com</a> <br>
+		Navigation icon:<a href="http://chittagongit.com/icon/navigation-bar-icon-21.html" > www.http://chittagongit.com</a>
+	</p>	
+	<footer>
+		This website was made for CIS155 &copy; 2019
+	</footer>
+	</body>	
+</html>

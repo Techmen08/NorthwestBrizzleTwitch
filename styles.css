@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* fonts are from google fonts, https://fonts.google.com/specimen/Ubuntu?selection.family=Open+Sans|Ubuntu */
+@font-face{
+	font-family: Ubuntu;
+	src:url('Ubuntu-Regular.ttf') format('truetype');
+}
+@font-face{
+font-family: OpenSans;
+src:url('OpenSans-Regular.ttf') format('truetype');
+}
+	/*
+		
+	Project: V3
+	Author: Derek McBryde
+	Date:   25MAY2019
+   
+	Filename: styles.css
+	*/
+/*M2LO3A Demonstrate style precedence in CSS */
+/* Header Styles */
+header{
+	background-color: rgba(0, 114, 0, 0.5);
+	 /*Colors from W3 Schools webite. https://www.w3schools.com/css/css_colors.asp */
+	 /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
+	 border-radius: 30%;
+}
+header > img{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	/* M4LO8 Demonstrate the use of transformations for 2D or 3D images. Using transformations you can shift the angle of pictures. You can tilt them, rotate them, 
+	or make it move in any direction desired.*/
+	transform: rotateX(-20deg);
+}
+/*M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is) In this case the float is causing the Nav bar to shift left
+  and each of the links will take up 1/3rd of the screen. */
+nav.bar > ul > li{
+	display: block;
+	float: left;
+	width: 33.33%;
+	background-color: rgba(0, 114, 0, 1);
+	text-decoration: none;
+	text-align: center;
+}
+
+nav li a{
+	display: block;
+	
+}
+/*M2LO6B  Demonstrate a CSS class selector*/
+nav.bar a:link, 
+nav.bar a:visited{
+   color: black;
+   text-decoration: none;
+}
+nav.bar a:hover, 
+nav.bar a:active{
+   background-color: black;
+   color: white;
+} 
+
+/*M3LO3 Demonstrate a clearing float (CSS, note where you have used a clear and what its impact is) This is used for container collapse*/
+/*M3LO4 Demonstrate removing container collapse by having a container element with a style rule that expands it around its floated content */
+/*M2LO11B Demonstrate a pseudo-element selector*/
+nav.bar::after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+nav{
+	clear: both;
+}
+
+/* Body Styles */
+/*M4LO2 Demonstrate the use of background images (CSS) */
+/*M3LO9 Demonstrate fixed, static, or inherited positioning */
+body{
+	background: url(4k-wallpaper-architecture-background-1308624.jpg) 10% / cover fixed;
+}
+
+#logo{
+	/*M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)*/
+	/*M2LO12 Demonstrate how CSS can change presentation of page elements. Using CSS I was able to center the picture, add borders, and add shadowing on the borders */
+	/*M2LO15 Apply colors using CSS*/
+	border-width: 5px;
+	border-Style: double;
+	display: block;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	/*M4LO6 Demonstrate the use of opacity/transparency for images*/
+	opacity: 0.9;
+	/*M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)*/
+	-webkit-filter: saturate(1);
+	filter: saturate(1);
+}
+
+/*M2LO5B Demonstrate contextual selectors. Using elem.*/
+p{
+	padding: 10px;
+	text-align: left;
+	color: white;
+}
+/*M2LO3B Demonstrate style inheritance in CSS */
+p > a 
+{
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	
+}
+/* M2LO11A Demonstrate a pseudo-class selector*/
+p > a:hover, 
+p > a:active{
+   color: rgb(0, 255, 0);
+} 
+/*M2LO5A Demonstrate contextual selectors. Using Parent > Child */
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS*/
+body > article{
+	background-color: rgba(0, 114, 0, 0.5);
+}
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements. CSS here allows me to change the font to a font I found on google and 
+  change the font color to white.*/
+
+body > article > h1{
+	text-align: left;
+	padding: 10px;
+	font-family: Ubuntu;
+	color: white;
+}
+
+body > article > h2{
+	text-align: left;
+	padding: 10px;
+	font-family: Ubuntu;
+	color: white;
+}
+
+body > article > h3{
+	text-align: left;
+	padding: 10px;
+	font-family: Ubuntu;
+}
+
+body > article > h4{
+	text-align: left;
+	padding: 10px;
+	font-family: Ubuntu;
+}
+
+
+body > article >p{
+	font-family: OpenSans;
+	
+}
+article > ol> li{
+	color: white;
+}
+
+article > p > a{
+	position: absolute;
+}
+
+#id{
+	color: red;
+	text-decoration: none;
+}
+
+/* footer Styles */
+
+footer{
+	text-align: center;
+	clear: both;
+}

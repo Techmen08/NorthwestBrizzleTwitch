@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page -->
+<head>
+	<meta charset="utf-8" />
+	<!--
+		
+	Project: V3
+	Author: Derek McBryde
+	Date:   25MAY2019
+   
+	Filename: aboutme.html
+	-->
+	<title>Northwest Brizzle</title>
+	<meta name="keywords" content="Twitch, Streamer, Northwest, Pacific, Beard"/>
+	<meta name="description" content="Northwest Brizzle home page"/>
+	<meta name="author" content="Derek McBryde" />
+	
+	<!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="aboutme.css" rel="stylesheet"/>
+	<!-- M2LO4A Demonstrate embedded styles (HTML, see "Embedded Style Sheets" (2-3b)) -->
+	<style>
+		h4{
+		color: white;
+		}
+	</style>
+</head>
+<body>
+
+
+   <header>
+   <img src="tmst2.png" alt="TMST" />
+      <nav class="bar">
+	  <img src="navigation-bar-icon.png" id="navigationIcon" alt="navigation-bar-icon"/>
+		<!-- M1LO13A Demonstrate a hyperlink to another page on your site (site navigation) (HTML) 
+			 M1LO12 Create navigation using unordered lists (HTML)-->
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+			<li><a href="about.html">Updates</a></li>
+         </ul>
+      </nav>
+	</header>
+	<article>
+	<h1> About Me</h1>
+		<p>
+			I am a Navy veteran that grew up in Portland, Oregon. I joined the Navy right out of high school and was enlisted for 10 years. 
+			I saw the world and had some good and bad times along the way. In my last year in the Navy I contracted a rare nerve disease called 
+			Complex regional pain syndrome or CRPS. I was unable to walk without assistance. I got back into gaming because it is really all I could do.
+			I met up with an old friend that told me about streaming on Twitch. I looked into and figured I would give it a shot. I have been an Affiliate
+			with Twitch for almost a year. It was hard work but it was fun. I have made a lot of friends along the way.
+		</p>
+		<h2>My Goals are: </h2>
+
+		<ol>
+			<!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters). 
+				 Code from https://www.toptal.com/designers/htmlarrows/symbols/check-mark/ -->
+			<li>&#10003; 50 Followers</li>
+			<li>&#10003; Become an Affiliate</li>
+			<li>100 followers</li>
+			<li>20 subscribers </li>
+			<li>Make more goals</li>
+		</ol>
+		<!-- M2LO4B Demonstrate inline styles (HTML, see "Inline Styles" (2-3c)) -->
+		<h3 style="color: white;">The games I usually play are:</h3>
+		<!-- M1LO7 Demonstrate the use of ordered lists (HTML) -->
+		<ol>
+			<li>The Division 2</li>
+			<li>The Borderlands Series</li>
+			<li>Call Of Duty: Black Ops 4</li>
+			<li>Sea Of Thieves</li>
+			<li>Overwatch</li>
+			<li>Dead By Daylight</li>
+		</ol>
+	</article>
+	<section id="emotes">
+		<h4>Tier 1 Emote</h4>
+		<img src="NorthwestBrizzle-Emote-B3.png" class="tier1" alt="" />
+		<h4>Tier 2 Emote</h4>
+		<img src="NorthwestBrizzle-Emote-A3.png" class="tier2" alt="" />
+		<h4>Tier 3 Emote</h4>
+		<img src="NorthwestBrizzle-Emote-C3.png" class="tier3" alt="" />
+	</section>
+	<article>
+		<h4>Twitch Crew</h4>
+		<p>
+			<!-- M1LO9 Demonstrate the use of inline images (HTML) -->
+			The people that helped me along the way is Twitch Crew. It is a great community for streamers and veiwers alike. Click the picture to be sent to their discord.
+			Be prepared for a welcome party. 
+		</p>
+		<a href="https://discord.gg/eJZmUY9"><img src="TwitchCrew.png" class="tc" alt="Twitch Crew Logo"/></a>
+	</article>
+	<!-- M6LO3 Demonstrate how to create a table -->
+	<table class="streamTime">
+				<caption> All Times PST. </caption>
+				<colgroup> 
+					<col class="time" />
+					<col class="weekday" span="5" />
+					<col class="weekend" span="2" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+						<th>Sun</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>6:00</th>
+						<!-- M6LO4 Demonstrate how to span multiple rows or 
+							  multiple columns in a table. Everything is
+							  in one column but spans many rows. -->
+						<td rowspan="4" colspan="1">Live</td>
+						<td rowspan="4" colspan="1">Live</td>
+						<td rowspan="6" >Off</td>
+						<td rowspan="4" colspan="1">Live</td>
+						<td rowspan="6" colspan="1">Live</td>
+						<td rowspan="6" colspan="1">Live</td>
+						<td rowspan="6" >Off</td>
+					</tr>
+					<tr>
+						<th>7:00</th>
+					</tr>
+					<tr>
+						<th>8:00</th>
+					</tr>
+					<tr>
+						<th>9:00</th>
+					</tr>
+					<tr>
+						<th>10:00</th>
+					</tr>
+					<tr>
+						<th>11:00</th>
+					</tr>
+					<tr>
+						<th>12:00</th>
+					</tr>
+				</tbody>
+				<tfoot>
+				<tr>
+					<td colspan="8">*Subject to change</td>
+				</tr>
+				</tfoot>
+			</table>
+	<footer>
+		This website was made for CIS155 &copy; 2019
+	</footer>
+
+</body>
+</html>
