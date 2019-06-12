@@ -19,6 +19,7 @@ src:url('OpenSans-Regular.ttf') format('truetype');
 /*M2LO3A Demonstrate style precedence in CSS */
 /* Header Styles */
 header{
+	width: 100%;
 	background-color: rgba(0, 114, 0, 0.5);
 	 /*Colors from W3 Schools webite. https://www.w3schools.com/css/css_colors.asp */
 	 /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
